@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Vid{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 76px;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.logo{
+    position: absolute;
+    width: 60%;
+    filter: invert(100%);
+}
+.logoD{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.logoMain{
+    position: absolute;
+    width: 15%;
+    margin-top: 34px;
+    display: none;
+}
+.logoMainD{
+    justify-content: center;
+    display: flex;
+}
+.TM3{
+    position: relative;
+}
+.navbar{
+    text-align: center;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.m1{
+    margin-top: 70px;
+    padding-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 2;
+}
+.m2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 2;
+}
+.m3{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 2;
+}
+.m4{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 2;
+}
+.navbar:hover > :not(:hover){
+    opacity: 0.5;
+}
+.TM3I{
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -5px;
+    text-align: center;
+    z-index: 1;
+}
+    .bk{
+        border-radius: 5px;
+        position: absolute;
+        background-color: rgba(153, 153, 153, 0);
+        width: 46px;
+        height: 46px;
+        margin-bottom: 245px;
+        z-index: 1;
+        transition:all 0.2s;
+    }
+    .m1:hover ~ .bk{
+        background-color: rgba(153, 153, 153, 0.342);
+      }
+  .m2:hover ~ .bk {
+    margin-top: 260%;
+    background-color: rgba(153, 153, 153, 0.342);
+  }
+  
+  .m3:hover ~ .bk {
+    margin-top: 515%;
+    background-color: rgba(153, 153, 153, 0.342);
+  }
+  
+  .m4:hover ~ .bk {
+    margin-top: 770%;
+    background-color: rgba(153, 153, 153, 0.342);
+  }
+  
+.Tpos{
+    margin-top: 20%;
+    text-align: center;
+}
+.FT{
+    font-family: GM;
+    color: white;
+    font-size: 40px;
+}
+.tfg>p{
+    color: white;
+    font-family: PN;
+}
+.fb1{
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(112, 112, 112, 0.438);
+    font-family: PN;
+    border: none;
+    transition: ease-in 0.1s;
+}
+.fb1:hover{
+    background-color: white;
+    color: black;
+}
+.fb1:active{
+    outline: none;
+}
+.fb2{
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(112, 112, 112, 0.438);
+    font-family: PN;
+    border: none;
+    transition: ease-in 0.1s;
+}
+.fb2:hover{
+    background-color: white;
+    color: black;
+}
+.fb2:active{
+    outline: none;
+}
+.fb{
+    margin: 10px;
+    width: 190px;
+}
+.TMS{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.TMX{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.TMY{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.Fspan{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(134, 134, 134);
+}
+.Fspan>span>a{
+    color: rgb(134, 134, 134);
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c0c0c;
+    z-index: 1001;
+  }
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+  }
+  .loaded_hiding .preloader {
+    transition: 1s opacity;
+    opacity: 0;
+  }
+
+  .loaded .preloader {
+    display: none;
+  }
+footer{
+    width: 100%;
+    height: 55px;
+}
+@font-face {
+    font-family: PN;
+    src: url(fonts/Proxima\ Nova\ Font.otf);
+}
+@font-face {
+    font-family: GM;
+    src: url(fonts/Gotham\ Medium.otf);
+}
+@media screen and (max-width: 706px) {
+    .FT{
+        font-size: 25px;
+    }
+    .tfg>p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .fb1{
+        font-size: 14px;
+        width: 160px;
+    }
+    .fb2{
+        font-size: 14px;
+        width: 160px;
+        margin-top: -10px;
+    }
+    .info{
+        margin-top: -50px;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    .bfg{
+        width: 40%;
+    }
+    .tfg{
+       
+    }
+}
+@media screen and (max-width: 422px){
+    .tfg{
+       margin-left: 20px
+    }
+    header{
+        width: 60px;
+    }
+    .navbar{
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width: 307px){
+    .tfg{
+       margin-left: 50px
+    }
+}
